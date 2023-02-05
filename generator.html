@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trump Generator</title>
+    <link href="./styles/style.css" rel="stylesheet">
+    <link rel="icon" href="./images/tweetie.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a href="#tweet-text" class="link-skip">Skip to tweet text</a>
+    <main class="content-generator">
+        <div class="sidebar-and-button">
+            <aside class="sidebar">
+                <ul>
+                    <li class="setting-group">
+                        <h2 class="streamer">Text Settings</h2>
+                        <ul class="setting-list">
+                            <li class="listitem-row">
+                                <div class="icon-and-label"><img src="./images/icons/icon-dyslexia.svg"
+                                        alt="An icon of the letter 'A' in Dyslexie Font.">
+                                    <label for="dyslexia" class="body-m">Dyslexia Font</label></div>
+                                <input type="checkbox" name="dyslexia" id="dyslexia" class="toggle-switch">
+                            </li>
+                            <li class="listitem-row">
+                                <div class="icon-and-label"><img src="./images/icons/icon-dyslexia.svg"
+                                        alt="An icon of the letter 'A' in Dyslexie Font.">
+                                    <label for="dyslexia" class="body-m">Dyslexia Font</label></div>
+                                <input type="checkbox" name="dyslexia" id="dyslexia" class="toggle-switch">
+                            </li>
+                            <li class="listitem-row">
+                                <div class="icon-and-label"><img src="./images/icons/icon-moon.svg"
+                                        alt="An icon of the moon.">
+                                    <label for="darkmode" class="body-m">Dark Mode</label></div>
+                                <input type="checkbox" name="darkmode" id="darkmode" class="toggle-switch">
+                            </li>
+                            <li class="listitem-column">
+                                <div class="icon-and-label">
+                                    <label for="language" class="body-m">Language</label></div>
+                                <select name="language" id="language" class="input-dropdown body-m">
+                                    <option value=""></option>
+                                    <option value="English">English</option>
+                                    <option value="عربي" lang="ar">عربي</option>
+                                </select>
+                            </li>
+                            <li class="listitem-checkbox">
+                                <input type="checkbox" name="rtl" id="rtl" class="checkbox">
+                                <div class="icon-and-label">
+                                    <label for="checkbox" class="body-m">Right-to-left interface</label></div>
+                                
+                            </li>
+                            <li><button class="button button-sec button-darkmode">Switch</button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <button class="button-accessibility"><img src="./images/icons/icon-accessibility.svg"
+                    alt="An icon with a standing person stretching their arms."></button>
+        </div>
+        <div class="tweet-and-button">
+            <article class="tweet">
+                <div class="profile-picture">
+                    <img src="./images/img-pf.png" alt="Profile picture of Donald Trump" class="img-pf">
+                </div>
+
+                <div class="meta-text-icons">
+                    <div class="meta-info">
+                        <a href="generator.html" class="name-verified">
+                            <p class="name">Donald J. Trump</p><img src="./images/icons/icon-verified.svg"
+                                alt="Verified icon" class="icon-verified">
+                        </a>
+                        <p class="name-account">@<a href="https://www.twitter.com/realdonaldtrump">realDonaldTrump</a>
+                        </p>
+                        <img src="./images/icons/divider-dot.svg" alt="Divider" class="divider-dot">
+                        <p class="date">Jan 14, 2020</p>
+                    </div>
+
+                    <div class="tweet-text" id="tweet-text">
+                        <!-- <p class="body-m">cofveve cofveve cofveve cofveve cofveve cofveve cofveve cofveve</p> -->
+                        <p class="body-m" id="tweettext"></p>
+                    </div>
+
+                    <div class="row-icons"><a href=""><img src="./images/icons/icon-comment.svg" alt="Comment"></a>
+                        <a href=""><img src="./images/icons/icon-retweet.svg" alt="Retweet"></a>
+                        <a href=""><img src="./images/icons/icon-like.svg" alt="Like"></a>
+                        <a href=""><img src="./images/icons/icon-share.svg" alt="Share"></a></div>
+                </div>
+
+                <div class="icon-more"><a href="generator.html"><img src="./images/icons/icon-more.svg" alt=""></a>
+                </div>
+            </article>
+
+            <div class="button-and-keyboard">
+                <button class="button button-pri button-next tweetbutton">Next tweet<img
+                        src="./images/icons/icon-arrow.svg" alt="An arrow pointing right."></button>
+                <div class="keyboard-text">
+                    <p>press Enter</p><img src="./images/icons/icon-enter.svg" alt="">
+
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div>
+            <p>Copyleft 2023</p>
+        </div>
+        <table>
+            <!-- <caption>Credentials of resources that were used to create this website.</caption> -->
+            <thead>
+                <th class="streamer">Credits</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">API:</th>
+                    <td><a href="">Tronald Dump</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Icons</th>
+                    <td><a href="https://www.emmabons.nl/">Studio Maem</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </footer>
+
+    <script src="./js/opdracht.js"></script>
+    <script src="./js/confetti.js"></script>
+    <!-- Source of confetti.js: https://www.youtube.com/watch?v=quSR_ZrVz6Y -->
+
+</body>
+
+</html>
